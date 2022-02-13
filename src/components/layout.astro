@@ -32,14 +32,14 @@ const { title, description, home = false } = Astro.props;
 
   <style global>
     :root {
-      --heading: #151a1e;
+      --heading: #799496;
       --text: #33373b;
-      --text-muted: #676c70;
-      --primary: #5cebdf;
-      --button: #054861;
-      --lightBorder: #d2e0fe;
-      --light: #e5edff;
-      --white: #fff;
+      --text-muted: #799496;
+      --primary: #799496;
+      --button: #FFFBF0;
+      --lightBorder: #799496;
+      --light: #FFD29D;
+      --white: #FFFBF0;
     }
 
     * {
@@ -133,25 +133,17 @@ const { title, description, home = false } = Astro.props;
 <body>
   
   <header class="container">
-    <h1 class="heading">{title}</h1>
-
-    <p class="description">{description}</p>
-
+    <img
+      src="https://res.cloudinary.com/marrowtranslations-com/image/upload/v1644788397/M_dzjbyh.svg"
+      name="Marrow Translations"
+      alt="Marrow Translations"
+    />
   </header>
 
   <slot />
 
   <footer class="footer">
-    <a href="https://www.netlify.com/?utm_source=github&utm_medium=feature-tour-repo&utm_campaign=devex-jl">
-      created with
-      <span class="heart" role="img" aria-label="love">
-        <img
-          src="https://res.cloudinary.com/jlengstorf/image/upload/f_auto,q_auto,w_50/v1596146333/netlify/netliheart.png"
-          alt="a heart with the Netlify logo pattern in it"
-        />
-      </span>
-      by the Netlify team
-    </a>
+      Site by Brandon Marrow. Logo by Erin McConnell. 
   </footer>
 
 </body>
